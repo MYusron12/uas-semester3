@@ -1,7 +1,7 @@
 <?php
 include('koneksi.php');
 if(isset($_POST['save'])){
-	$save="insert into satuan (id_satuan, nama)
+	$save="insert into satuan (id_satuan, nama_satuan)
 	values('".$_POST['id_satuan']."',
 			'".$_POST['nama_satuan']."')";
 	$proses=mysql_query($save);

@@ -1,14 +1,14 @@
 <?php
 include('koneksi.php');
 if(isset($_POST['save'])){
-	$save="insert into barang (id_barang, nama, kategori_id, satuan_id)
+	$save="insert into barang (id_barang, nama_barang, kategori_id, satuan_id)
 	values('".$_POST['id_barang']."',
 			'".$_POST['nama_barang']."',
 			'".$_POST['kategori_id']."',
 			'".$_POST['satuan_id']."')";
 	$proses=mysql_query($save);
 	if($proses){
-		header("Location:tampil_barang.php");
+		header("location:tampil_barang.php");
 	}else{
 		echo mysql_errno();
 	}

@@ -8,7 +8,7 @@ inner join satuan as stn
 on br.id_barang=stn.id_satuan
 ");
 ?>
-<h1>Laporan Transaksi Barang Perkategori</h1>
+<h1>Tampil Transaksi</h1>
 <table border="1">
 	<tr>
 		<td>Kategori</td>
